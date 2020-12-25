@@ -1,203 +1,120 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="canonical" href="https://letswritetw.github.io/letswrite-food-check/" />
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<HTML>
+<HEAD>
 
-	<title>午餐吃什 - Augustus - Let's Write</title>
-	<meta name="description" content="午餐吃什麼？用抽獎方式來決定今天的午餐吧！由 Augustus 開發，以 Google Excel 當資料庫，介接 Google Map Embed API，輕鬆好管理。">
-	<link rel="shortcut icon" href="https://letswritetw.github.io/letswritetw/dist/img/logo_512.png"/>
-	<meta property="og:url" content="https://letswritetw.github.io/letswrite-food-check/" />
-	<meta property="og:site_name" content="Let's Write" />
-	<meta property="og:title" content="午餐吃什麼 - by Augustus - Let's Write" />
-	<meta property="og:description" content="午餐吃什麼？用抽獎方式來決定今天的午餐吧！由 Augustus 開發，以 Google Excel 當資料庫，介接 Google Map Embed API，輕鬆好管理。" />
-	<meta property="og:image" content="https://letswritetw.github.io/letswrite-food-check/assets/img/bg-food.jpg" />
-	<meta itemprop="name" content="午餐吃什麼 - by Augustus">
-	<meta itemprop="description" content="午餐吃什麼？用抽獎方式來決定今天的午餐吧！由 Augustus 開發，以 Google Excel 當資料庫，介接 Google Map Embed API，輕鬆好管理。">
-	<meta itemprop="image" content="https://letswritetw.github.io/letswrite-food-check/assets/img/bg-food.jpg">
+<TITLE>抽籤系統 (514巷)</TITLE>
 
-
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css'/>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
-	<link rel="stylesheet" href="assets/css/main.css">
-
-	<!-- Google Tag Manager-->
-	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-PGQ9WQT');
-	</script>
-
-</head>
-<body>
-
-	<!-- Google Tag Manager (noscript)-->
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-
-	<!--  背景圖  -->
-	<main class="full-block">
-		
-		<!--  主要內容  -->
-		<div class="main-block">
-			
-			<!--  顯示區塊  -->
-			<section class="god">
-				<h1>
-					<span class="wrap">
-						<span>午餐吃什麼呢？</span>
-					</span>
-				</h1>
-			</section>
-
-			<!--  按鈕  -->
-			<section class="btns">
-
-				<div class="checkbox">
-					<p class="vegetarian">Vegetarian？</p>
-
-					<!--  素食  -->
-					<div class="check">
-						<label class="toggle">
-							<input id="vage" type="checkbox" checked>
-							<span class="button round"></span>
-						</label>
-					</div> 
-				</div>
-
-				<!--  start  -->
-				<a class="btn-start" href="#">
-					<span class="line top -h"></span>
-					<span class="line right -v"></span>
-					<span class="line bottom -h"></span>
-					<span class="line left -v"></span>
-				</a>
-			</section>
-
-			<!--  地圖  -->
-			<section id="map" class="map">
-				<iframe frameborder="0" style="border:0" src="" allowfullscreen></iframe>
-			</section>
-		</div>
-	</main>
-
-	<!--  github link  -->
-	<div class="github">
-		<a href="https://github.com/letswritetw/letswrite-food-check">
-			<i class="fa fa-github" aria-hidden="true"></i>
-		</a>
-	</div>
-
-	<!--  for search  -->
-	<div class="search-only">
-		<h2>
-			午餐吃什麼選擇器 Google Excel、Google Map Embed API
-		</h2>
-		<p>
-			午餐吃什麼？用抽獎方式來決定今天的午餐吧！由 Augustus 開發，以 Google Excel 當資料庫，介接 Google Map Embed API，輕鬆好管理。
-		</p>
-	</div>
+	
 	
 
-	<script>
-		const url = 'https://spreadsheets.google.com/feeds/list/11wLZL0bNoD7ZQwfN3Tkx41YB6IgLbv4ftsrxywA0114/1/public/values?alt=json';
+	
+</HEAD>	
+	
+<style>
+	#input_20160628 {
+  	float:left;
+ 	width: 50%;
+ 	margin-right: 2em;
+	}
+	#input_20160628 label {
+  	display: block;
+  	margin-top: 0.5em;
+	}
+	#input_20160628 div {
+  	margin-top: 0.5em;
+  	text-align: center;
+	}
+	#input_20160628 textarea {
+  	width: 100%;
+  	height: 20em;
+	} 
+	.green-background {
+  	background-color: green;
+	}
+		
+	
+</style>
+	
 
-		const duration = 2000; // 拉霸效果執行多久
+	
+	
+	
+<body background="https://i.imgur.com/k4extOI.jpg">	
+<BODY>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	
+<script>
+	$(function () {
+  $("#input_20160628 button.draw").click(function () {
+    var _lines = $.trim($("#input_20160628 textarea").val()).split("\n");
+    var _repeatable = ($('#input_20160628 [name="repeatable"]').length === 1);
+    var _number = parseInt($('#input_20160628 [name="number"]').val());
+    var _result = $("#result_20160628").empty();
+    if (isNaN(_number)) {
+        //alert("抽出數量必須為數字");
+        _result.html("抽出數量必須為數字");
+        return;
+    }
+    if (_lines.length === 1 && _lines[0] === "") {
+        //alert("抽出數量必須為數字");
+        _result.html("必須輸入資料");
+        return;
+    }
 
-		// Maps Embed API 的 key，可由 https://console.developers.google.com/apis 申請
-		const embedApiKey = 'AIzaSyDVSu8cjT27wDKGUaahg5qx-FXlNVqD2N8';
+    var _list = [];
+    for (var _i = 0; _i < _lines.length; _i++) {
+        var _line = $.trim(_lines[_i]);
+        if (_repeatable === true) {
+            _list.push(_line);
+        }
+        else if ($.inArray(_line, _list) === -1) {
+            _list.push(_line);
+        }
+    }
+    
+    if (_number > _list.length) {
+      _number = _list.length;
+    }
 
-		fetch(url)
-			.then(res => res.json())
-			.then(data => {
-				let vages = []; // 素
-				let meats = []; // 葷
+    // 抽出n位
+    var _getRandomInt = function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
-				// 分葷、素，塞入陣列
-				const d = data.feed.entry, len =  d.length;
-				
-				for(let i = 0; i < len; i++) {
-					d[i].gsx$vage.$t === '是' ? vages.push(d[i].gsx$shops.$t) : meats.push(d[i].gsx$shops.$t);
-				}
-				
+    var _result_index = [];
+    _result.append('<div>抽籤結果(共'+_number+'位)：</div>');
+    for (var _r = 0; _r < _number; _r++) {
+        var _random_int = _getRandomInt(0, _list.length-1);
+        if ($.inArray(_random_int, _result_index) === -1) {
+            _result_index.push(_random_int);
+            _result.append('<div>' + _list[_random_int] + '</div>');
+        }
+        else {
+            _r--;
+        }
+    }
+  });
+  
+  $("#input_20160628 button.default").click(function () {
+    $("#input_20160628 textarea").val('明日之星\n正欣自助餐\n想初享廚\n鑫吉野自助餐\n玖零年代-燒臘便當專賣店\n泰國象 \n冰糖茶店\n八年得麻辣專賣店 \n韓聚食 \n愛這味 \n重慶酸辣粉 \n吉米特\nTHE PIZZA \n歐姆先生\n安東尼\n義維諾\n紅鬍子\n元珍食堂\n輔大豬排\n');
+  });
+});
+	
+</script>
 
-				// 點擊按鈕後執行
-				let r; // 亂數
-				let max, min; // 陣列的最大、小值
-				let txt; // 結果
+	
+	
+<div id="input_20160628">
+	<label>抽出數量: <input type="number" name="number" value="1" /></label>
+ 	<label><input type="checkbox" name="repeatable" /> 允許重複資料 </label>
+ 	<div><textarea></textarea></div>
+  		<div class="div-button">
+    			<button type="button" class="default">看看有哪些餐廳</button>
+    			<button type="button" class="draw">抽籤</button>
+  		</div>
+	</div>
+	<div id="result_20160628"></div>
+	<div style="clear:both"></div>
+	
+</BODY>
 
-
-				// 地圖
-				const map = document.querySelector('#map iframe');
-
-				// 按鈕
-				const btn = document.querySelector('.btn-start');
-				
-				btn.addEventListener('click', e => {
-					e.preventDefault();
-
-					// 選店家 fn
-					const chooseShop = toggle => {
-
-						// 取亂數 fn
-						r = () => {
-							max = toggle.length - 1;
-							min = 0;
-							return Math.floor(Math.random() * (max - min + 1)) + min;
-						};
-
-						// 清空、插入選項
-						let input = document.querySelector('.wrap');
-						input.innerHTML = '';
-						for(let i = 0; i < toggle.length; i++) {
-							input.insertAdjacentHTML('beforeend', '<span>' + toggle[i] + '</span>');
-						}
-
-						// 禁止按鈕再被點擊
-						e.target.classList.add('not-allow');
-
-						// 加入動畫 class name
-						const list = document.querySelectorAll('.wrap > span');
-						Array.prototype.forEach.call(list, l => l.classList.add('span-' + (toggle.length - 1)));
-
-						// 亂數決定中選店家
-						txt = toggle[r()];
-						list[0].innerText = txt;
-						
-						// 移除動畫
-						setTimeout(() => {
-							// 停止拉霸動畫
-							Array.prototype.forEach.call(list, l => l.removeAttribute('class'));
-
-							// 改變地圖位置
-							map.src = 'https://www.google.com/maps/embed/v1/place?key=' + embedApiKey + '&q=' + txt;
-
-						}, duration);
-
-						// 顯示地圖
-						map.addEventListener('load', () => {
-							map.classList.remove('hidden');
-							e.target.classList.remove('not-allow');
-						}, false);
-					};
-
-
-
-					// 地圖先消失
-					map.classList.add('hidden');
-
-					// 判斷葷素後，開始執行
-					let vage = document.getElementById('vage');
-					vage.checked ? chooseShop(vages) : chooseShop(meats);
-
-				}, false);
-
-			})
-	</script>
-</body>
-</html>
+</HTML>
